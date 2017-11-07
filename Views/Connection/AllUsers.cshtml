@@ -1,0 +1,15 @@
+<h3>Users you may want to connect with:</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    @foreach(var user in ViewBag.newPeople)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Connection" asp-action="detail" asp-route-id="@user.usersId">@user.name</a></td>
+            <td><a asp-controller="Connection" asp-action="makeconnection" asp-route-id="@user.usersId">Connect</a></td>
+        </tr>
+    }
+</table>

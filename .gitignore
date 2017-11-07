@@ -1,0 +1,4 @@
+appsettings.*
+.vscode
+.vim
+.obj

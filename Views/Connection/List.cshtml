@@ -1,0 +1,41 @@
+@model greenSwash.Models.profileViewModel
+@using greenSwash.Models;
+
+<h2>Hi @Model.name</h2>
+<p>Here is your description:</p>
+<p>@Model.description</p>
+
+<p>Your professional network:</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    @foreach(var connection in Model.network)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Connection" asp-action="detail" asp-route-id="@connection.usersId">@connection.name</a>
+            </td>
+            <td><a asp-controller="Connection" asp-action="remove" asp-route-id="@connection.usersId">remove</a></td>
+        </tr>
+    }
+</table>
+<hr>
+<p>your invitations</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    @foreach(var invitation in Model.invitations)
+    {
+        <tr>
+            <td>@invitation.connected.name</td>
+            <td>
+                <a asp-controller="Connection" asp-action="accept" asp-route-id="@invitation.connectionId">Accept Invite</a>
+                <a asp-controller="Connection" asp-action="ignore" asp-route-id="@invitation.connectionId">Ignore</a>
+            </td>
+        </tr>
+    }
+</table>

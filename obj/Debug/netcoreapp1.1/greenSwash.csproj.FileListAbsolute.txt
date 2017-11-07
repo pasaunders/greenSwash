@@ -1,0 +1,8 @@
+C:\Users\kaorti\code\greenSwash\bin\Debug\netcoreapp1.1\greenSwash.deps.json
+C:\Users\kaorti\code\greenSwash\bin\Debug\netcoreapp1.1\greenSwash.runtimeconfig.json
+C:\Users\kaorti\code\greenSwash\bin\Debug\netcoreapp1.1\greenSwash.runtimeconfig.dev.json
+C:\Users\kaorti\code\greenSwash\bin\Debug\netcoreapp1.1\greenSwash.dll
+C:\Users\kaorti\code\greenSwash\bin\Debug\netcoreapp1.1\greenSwash.pdb
+C:\Users\kaorti\code\greenSwash\obj\Debug\netcoreapp1.1\greenSwash.AssemblyInfo.cs
+C:\Users\kaorti\code\greenSwash\obj\Debug\netcoreapp1.1\greenSwash.dll
+C:\Users\kaorti\code\greenSwash\obj\Debug\netcoreapp1.1\greenSwash.pdb

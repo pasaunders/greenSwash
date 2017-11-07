@@ -1,0 +1,26 @@
+@model greenSwash.Models.logRegCompositeModel
+
+<h2>Register</h2>
+<div asp-validation-summary="All"></div>
+<form asp-controller="User" asp-action="register" method="post">
+    <label asp-for="registration.name"></label>
+    <input asp-for="registration.name">
+    <label asp-for="registration.email"></label>
+    <input asp-for="registration.email">
+    <label asp-for="registration.password"></label>
+    <input asp-for="registration.password">
+    <label asp-for="registration.comparePassword"></label>
+    <input asp-for="registration.comparePassword">
+    <label asp-for="registration.description"></label>
+    <input asp-for="registration.description">
+    <input type="submit" value="Register">
+</form>
+<hr>
+<h2>Login</h2>
+<form asp-controller="User" asp-action="login" method="post">
+    <label asp-for="login.email"></label>
+    <input asp-for="login.email">
+    <label asp-for="login.password"></label>
+    <input asp-for="login.password">
+    <input type="submit" value="Login">
+</form>
